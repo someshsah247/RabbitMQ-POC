@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: rabbitpoc
+  # RabbitMQ configuration -- not mandatory for default configuration or for local.
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+rabbit:
+  queue:
+    name: user-queue
+  exchange:
+    name: exchange
+  routing:
+    key: user-queue-exchange-rk
